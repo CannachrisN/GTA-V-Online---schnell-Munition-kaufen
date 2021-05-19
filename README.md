@@ -6,6 +6,9 @@ Wie starte ich diese Anwendung?
 - Laden Sie die .exe herunter
 - Bitte starten Sie diese .exe
 
+Wo kann ich diese Anwendung downloaden:
+- Hier in github: https://github.com/CannachrisN/GTA-V-Online---schnell-Munition-kaufen/raw/main/GTA%20V%20Online%20-%20schnelles%20Nachkaufen.exe
+
 Falls ihr die Funktionen übers GUI startet, so habt ihr 2 Sekunden zeit, um GTA V Online anzuklicken.
 Ihr könnt diese Makros über die vorgegebenen Tastenkombinationen (also ohne GUI) starten. 
 Mehr Infos: Siehe Anwendung -> Info -> Infobox
