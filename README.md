@@ -1,5 +1,5 @@
 # GTA-V-Online---schnell-Munition-kaufen
-Das Programm kauft für euch in GTA V Online schnell die Munition nach. Mehr Details darüber findet ihr in der Anwendung.
+Das Programm kauft für euch in GTA V Online schnell die Munition nach. Mehr Details findet ihr in der Anwendung.
 Es ist noch absolut in der Beta-Phase
 
 Wie starte ich diese Anwendung?
