@@ -7,9 +7,6 @@ menuZeit = 5
 differenz = 5
 jenterPause = 500
 
-; 
-Menu, Tray, Icon, C:\GIT\cnRED.ICO
-
 ; Das GUI
 ok:
 Gui, Destroy

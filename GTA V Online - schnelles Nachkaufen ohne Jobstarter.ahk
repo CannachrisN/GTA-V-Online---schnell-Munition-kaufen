@@ -3,8 +3,7 @@
   ;1000=1sec
   zeit = 5
   warten = 2000
- 
-  Menu, Tray, Icon, C:\GIT\pic\cnRED.ICO
+
  
   ; Das GUI
   ok:
@@ -131,7 +130,7 @@ return
   return
  
   ; zwei mal nach Links
-  nachLinks:
+  links:
   Send, {Left}
   Sleep, zeit
   return
@@ -156,7 +155,7 @@ Loop, 3 {
   schwereWaffen:
 Loop, 3 {
   gosub zweiMalHoch
-  gosub nachLinks
+  gosub links
   gosub zweiMalHoch
   gosub enter
   }
