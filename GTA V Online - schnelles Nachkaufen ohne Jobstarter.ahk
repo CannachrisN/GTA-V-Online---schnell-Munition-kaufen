@@ -35,7 +35,7 @@
   Gui, Add, Button, x12 y260 w520 h30 gok, OK
   Gui, Add, Text, x12 y9 w520 h260 , Informationen
   Gui, Add, Text, x372 y39 w0 h0 , Text
-  Gui, Add, ListBox, x12 y39 w520 h220 , Faust muss ausgewählt sein, so wie die folgenden Waffen im Besitz | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | Scharfschützenmunition | | Tastenkombinationen: | Strg + ä: nachkaufen ohne CEO | Strg + ö: nachkaufen mit CEO | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
+  Gui, Add, ListBox, x12 y39 w520 h220 , Faust muss ausgewählt sein und die folgenden Waffen müssen im Besitz sein | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | Scharfschützenmunition | | Tastenkombinationen: | Strg + ä: nachkaufen ohne CEO | Strg + ö: nachkaufen mit CEO | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
   Gui, Add, Button, x12 y290 w520 h30 gspenden, Spenden?: Meine XMR-Adresse in die Zwischenablage kopieren
   Gui, Show, w550 h332, Untitled GUI
   return
