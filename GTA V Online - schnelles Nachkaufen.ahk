@@ -15,6 +15,7 @@ Gui, Add, Button, x12 y9 w150 h50 gschnellNachkaufenGUI, schnelles Nachkaufen oh
 Gui, Add, Button, x12 y59 w150 h50 gschnellNachkaufenGUII, schnelles Nachkaufen mit CEO
 ; Generated using SmartGUI Creator for SciTE
 Gui, Add, Button, x12 y109 w150 h50 ginfo, Info
+Gui, Add, Button, x162 y109 w150 h50 gEinstellungen, Einstellungen
 ; schneller Jobstart
 Gui, Add, Button, x162 y9 w150 h50 gjobBaseGUI, schneller Jobstart bei der Militär-Basis
 Gui, Add, Button, x162 y59 w150 h50 gjobCasinoGUI, schneller Jobstart beim Casino
@@ -109,9 +110,16 @@ Gui, Destroy
 Gui, Add, Button, x12 y260 w520 h30 gok, OK
 Gui, Add, Text, x12 y9 w520 h260 , Informationen
 Gui, Add, Text, x372 y39 w0 h0 , Text
-Gui, Add, ListBox, x12 y39 w520 h220 , Faust muss ausgewählt sein und die folgenden Waffen müssen im Besitz sein | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | Scharfschützenmunition | | Tastenkombinationen: | Strg + ä: nachkaufen ohne CEO | Strg + ö: nachkaufen mit CEO | (noch etwas verbugt;) | Strg+Shift+ö: Startet den Job beim Casino | Strg+Shift+ä: Startet den Job bei der Militär-Base | | Falls ihr die Jobs sofort abbricht, könnt ihr euch dorthin teleportieren. | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
+Gui, Add, ListBox, x12 y39 w520 h220 , Für GTA V Online 1.24 | | Faust muss ausgewählt sein und die folgenden Waffen müssen im Besitz sein | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | Scharfschützenmunition | | Tastenkombinationen: | Strg + ä: nachkaufen ohne CEO | Strg + ö: nachkaufen mit CEO | (noch etwas verbugt;) | Strg+Shift+ö: Startet den Job beim Casino | Strg+Shift+ä: Startet den Job bei der Militär-Base | | Falls ihr die Jobs sofort abbricht, könnt ihr euch dorthin teleportieren. | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
 Gui, Add, Button, x12 y290 w520 h30 gspenden, Spenden?: Meine XMR-Adresse in die Zwischenablage kopieren
 Gui, Show, w550 h332, Informationen GUI
+return
+
+Einstellungen:
+Gui, Destroy
+Gui, Add, Text, x12, Hier kann man bald die Aktions-Zeit einstellen
+Gui, Add, Button, x12 y260 w520 h30 gok, OK
+Gui, Show
 return
 
 ; Kauft einige wichtige Waffen auf Knopfdruck
@@ -159,6 +167,9 @@ nachKaufen:
 
 gosub enter
 gosub dreiMalRunter
+gosub runter
+gosub runter
+
 gosub enter
 gosub hoch
 gosub enter
