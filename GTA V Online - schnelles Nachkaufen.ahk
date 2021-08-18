@@ -17,25 +17,25 @@ Gui, Add, Button, x12 y59 w150 h50 gschnellNachkaufenGUII, schnelles Nachkaufen 
 Gui, Add, Button, x12 y109 w150 h50 ginfo, Info
 Gui, Add, Button, x162 y109 w150 h50 gEinstellungen, Einstellungen
 ; schneller Jobstart
-Gui, Add, Button, x162 y9 w150 h50 gjobBaseGUI, schneller Jobstart bei der Militär-Basis
+Gui, Add, Button, x162 y9 w150 h50 gjobBaseGUI, schneller Jobstart bei der MilitÃ¤r-Basis
 Gui, Add, Button, x162 y59 w150 h50 gjobCasinoGUI, schneller Jobstart beim Casino
 Gui, Show, w324 h168, GTA V schnelles Nachkaufen GUI
 return
 
-;schneller Job-Start bei der Militär Basis
+;schneller Job-Start bei der MilitÃ¤r Basis
 jobBaseGUI:
 Sleep, warten
 gosub jobBase
 return
 
 jobBaseKnopf:
-^+ä::
+^+Ã¤::
 gosub jobBase
 return
 
 ;schneller Job-Start beim Casino
 jobCasinoGUI:
-^+ö::
+^+Ã¶::
 Sleep, warten
 gosub jobCasino
 return
@@ -45,7 +45,7 @@ jobCasinoKnopf:
 gosub jobCasino
 return
 
-; Die in den Job-Menü lässt
+; Die in den Job-MenÃ¼ lÃ¤sst
 jobs:
 Send, {Esc}
 Sleep, menuZeit
@@ -58,7 +58,7 @@ gosub jenter
 ;jetzt unterscheiden sich die Base und Casino Jobs
 return
 
-; Der Casino-Job im Job-Menü
+; Der Casino-Job im Job-MenÃ¼
 jobCasino:
 gosub jobs
 Loop, 3 {
@@ -72,7 +72,7 @@ gosub jenter
 gosub jenter
 return
 
-; Der Basis-Job im Job-Menü
+; Der Basis-Job im Job-MenÃ¼
 jobBase:
 gosub jobs
 Loop, 2 {
@@ -110,7 +110,7 @@ Gui, Destroy
 Gui, Add, Button, x12 y260 w520 h30 gok, OK
 Gui, Add, Text, x12 y9 w520 h260 , Informationen
 Gui, Add, Text, x372 y39 w0 h0 , Text
-Gui, Add, ListBox, x12 y39 w520 h220 , Für GTA V Online 1.24 | | Faust muss ausgewählt sein und die folgenden Waffen müssen im Besitz sein | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | Scharfschützenmunition | | Tastenkombinationen: | Strg + ä: nachkaufen ohne CEO | Strg + ö: nachkaufen mit CEO | (noch etwas verbugt;) | Strg+Shift+ö: Startet den Job beim Casino | Strg+Shift+ä: Startet den Job bei der Militär-Base | | Falls ihr die Jobs sofort abbricht, könnt ihr euch dorthin teleportieren. | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
+Gui, Add, ListBox, x12 y39 w520 h220 , FÃ¼r GTA V Online 1.24 | | Faust muss ausgewÃ¤hlt sein und die folgenden Waffen mÃ¼ssen im Besitz sein | |-Waffenliste | Granatwerfer | Lenkrakete | Minigun | Panzerfaust | Granatwerfer | ScharfschÃ¼tzenmunition | | Tastenkombinationen: | Strg + Ã¤: nachkaufen ohne CEO | Strg + Ã¶: nachkaufen mit CEO | (noch etwas verbugt;) | Strg+Shift+Ã¶: Startet den Job beim Casino | Strg+Shift+Ã¤: Startet den Job bei der MilitÃ¤r-Base | | Falls ihr die Jobs sofort abbricht, kÃ¶nnt ihr euch dorthin teleportieren. | | Programmiert von Cannachris | | Fragen: givq2r0ie@relay.firefox.com
 Gui, Add, Button, x12 y290 w520 h30 gspenden, Spenden?: Meine XMR-Adresse in die Zwischenablage kopieren
 Gui, Show, w550 h332, Informationen GUI
 return
@@ -124,12 +124,12 @@ return
 
 ; Kauft einige wichtige Waffen auf Knopfdruck
 schnellNachladenAufKnopfdruckOhneCEO:
-^ä::
+^Ã¤::
 gosub nachKaufenOhneCEO
 return
 
 schnellNachladenAufKnopfDruckMitCEO:
-^ö::
+^Ã¶::
 gosub nachKaufenMitCEO
 return
 
@@ -143,8 +143,6 @@ Loop, 2 {
 }
 gosub nachKaufen
 return
-
-;bis dort hin funktioniert es
 
 ; mitCeo
 nachKaufenMitCEO:
@@ -176,7 +174,7 @@ gosub enter
 gosub runter
 ; jetzt Pistole
 gosub links
-; Granatwerfer einmal Handmännisch
+; Granatwerfer einmal HandmÃ¤nnisch
 gosub hoch
 gosub enter
 gosub schwereWaffen
@@ -190,7 +188,7 @@ gosub hoch
 gosub enter
 gosub runter
 gosub links
-; Scharfschützenmunition
+; ScharfschÃ¼tzenmunition
 gosub hoch
 gosub enter
 Loop, 3 {
